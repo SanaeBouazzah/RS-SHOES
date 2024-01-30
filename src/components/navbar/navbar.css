@@ -15,6 +15,7 @@
 }
 .navbar-links_logo h2{
   font-family: var(--font-family);
+  color:#fff;
 }
 .navbar-links_container{
   display: flex;

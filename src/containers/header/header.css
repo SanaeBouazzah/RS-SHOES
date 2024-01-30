@@ -1,0 +1,190 @@
+.header-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+}
+.header-content h1{
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  color:#fff;
+}
+.header-content .para{
+  text-align: center;
+  max-width: 800px;
+  margin:auto;
+}
+.header-content .para p{
+  font-family:  var(--font-family);
+  font-size: 20px;
+  line-height: 35px;
+  color:#fff;
+  margin-top: 1.5rem;
+  padding:0 5rem;
+  text-align: center;
+}
+.header-content-input button{
+  border:none;
+  outline: none;
+  color:#fff;
+  margin:2.9rem 0;
+  padding:1rem 2rem;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header-content-input button:hover{
+  opacity: .8;
+  transition:all 1s linear;
+}
+.header-content_container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.header-content_container .discount p{
+  background: linear-gradient(to top, rgba(222, 215, 244, 0.6) 40%, rgba(250, 172, 168,0.5) 60%);
+  color:#000;
+  padding:2rem 2rem;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  border:0;
+  border-radius: 5px;
+}
+.header-content_options .pic{
+  width:200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:rgba(250, 172, 168,0.1);
+  box-shadow: rgba(250, 172, 168,0.1) 0px 8px 24px;
+  margin:1rem 0;
+  padding:1rem 1rem;
+  border-radius: 5px;
+}
+.header-content_options .pic:hover{
+  box-shadow: none;
+  transition: all 1s ease-in-out;
+}
+.header-content_options .pic p{
+  font-size: 13px;
+  margin-top: 0;
+  line-height: 20px;
+  margin-left: 10px;
+  color:#000;
+  padding:0;
+  font-family: var(--font-family);
+}
+.header-content_options .pic .image{
+  height:50px;
+}
+.header-content_options .pic .image img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width:1050px){
+  .header-content_options .pic{
+    width:150px;
+    margin:1rem 0;
+    padding:10px;
+  }
+  .header-content_options .pic p{
+    max-width: 60px;
+    font-size: 10px;
+    margin-top: 0;
+    line-height: 20px;
+    margin-left: 0;
+    padding:0;
+  }
+  .header-content_options .pic .image{
+    height:30px;
+  }
+}
+@media screen and (max-width:800px){
+  .header-content_container .discount p{
+    padding:1rem ;
+    font-size: 15px;
+  }
+  .header-content_options .pic p{
+    display: none;
+  }
+  .header-content_options .pic{
+    width:70px;
+    margin:1rem 0;
+    padding: 10px;
+  }
+}
+@media screen and (max-width:600px){
+  .header-content_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-content_options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-content_container .discount{
+    align-self: flex-start;
+  }
+  .header-content_options .pic{
+    margin: .5rem 1rem 0;
+  }
+  .header-content .para p{
+    font-size:17px;
+    line-height: 30px;
+    color:#fff;
+    margin-top: .5rem;
+    padding:0;
+    text-align: center;
+  }
+  .header-content-input button{
+    margin:.9rem 0;
+    padding:1rem 2rem;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .header-content h1{
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width:400px){
+  .header-content .para p{
+    font-size:15px;
+    line-height: 25px;
+    color:#fff;
+    margin-top: .5rem;
+    padding:0;
+    text-align: center;
+  }
+  .header-content__sneakers{
+    height:240px;
+  }
+  .header-content__sneakers img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .header-content_container .discount p{
+    padding:10px;
+    line-height: 1.5;
+    font-size:10px;
+  }
+}
+@media screen and (max-width:380px){
+  .header-content__sneakers{
+    height:200px;
+  }
+  .header-content_options .pic{
+    margin: .5rem .5rem 0;
+  }
+}
